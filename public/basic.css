@@ -1,0 +1,39 @@
+body {
+  font-family: 'helvetica';
+}
+
+button {
+  margin-bottom: 10px;
+}
+
+.columns {
+  align-items: center;
+  display: flex;
+}
+
+.column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.component {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.cell.dead {
+  background-color: gray;
+}
+
+.cell.live {
+  background-color: red;
+}

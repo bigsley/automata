@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="basic.css">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+            crossorigin="anonymous"></script>
+    <script src="basic.js"></script>
+  </head>
+  <body>
+    <div class='component'>
+      <div id='box'>
+      </div>
+
+      <div class='columns'>
+        <div class='column'>
+          <div class='input'>
+            <div class='label'>
+              Width:
+            </div>
+            <input id='width' value='10'>
+          </div>
+
+          <div class='input'>
+            <div class='label'>
+              Height:
+            </div>
+            <input id='height' value='10' />
+          </div>
+
+          <div class='input'>
+            <div class='label'>
+              Frequency (hz):
+            </div>
+            <input id='frequency' value='10' />
+          </div>
+        </div>
+        <div class='column'>
+          <div>
+            <button id='randomize-button'>Randomize</button>
+          </div>
+
+          <div>
+            <button id='animate-button'>Animate</button>
+          </div>
+
+          <div>
+            <button id='pause-button'>Pause</button>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
