@@ -10,6 +10,8 @@ let gridElements = null;
 let msPerLoop = 1000.0 / parseFloat($('#frequency').val());
 let liveValues = [2, 3];
 let bornValues = [3];
+let rounds = 0;
+let gridRecord = [];
 
 const buildGrid = (fn) => {
   const width = parseInt($('#width').val());
@@ -186,6 +188,10 @@ const handleAnimateToggle = () => {
   }
 }
 
+const handleLifeRecordToggle = () => {
+
+}
+
 $(document).ready(() => {
   grid = buildGrid();
   renderGrid();
@@ -196,4 +202,5 @@ $(document).ready(() => {
   $('#born').keyup(handleBornChange);
   $('#randomize-button').click(handleRandomize);
   $('#animate-button').click(handleAnimateToggle);
+  $('#record-button').click(handleLifeRecordToggle);
 });

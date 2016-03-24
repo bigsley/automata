@@ -26,14 +26,27 @@ button {
   height: 100vh;
 }
 
-.row {
+.grid {
   display: flex;
+  flex-direction: column;
 }
 
-.cell.dead {
-  background-color: #888;
+.grid--row {
+  display: flex;
+  flex-direction: row;
 }
 
-.cell.live {
+.grid--cell {
+  color: gray;
+  height: 10px;
+  margin: 1px;
+  width: 10px;
+}
+
+.grid--cell-live {
   background-color: #1234af;
+}
+
+.grid--cell-dead {
+  background-color: #888;
 }
